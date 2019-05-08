@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>友情提示：该页面不存在或已被删除！</title>
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="./css/404.css">
+	</head>
+	<body>
+		<div class="container">
+			<img class="bg" src="https://ws3.sinaimg.cn/large/005BYqpgly1g07cbbpzcsj30g406e40s.jpg"/>
+			<div class="btn">
+				<a class="goindex"><span id="tt" style="color:azure; font-size:18">3</span> 秒跳转</a>
+				<a href="/index.php" target="_blank" class="lx">返回首页</a>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+		
+            <script language="javascript" type="text/javascript">
+                var sec = document.getElementById('tt').textContent;
+                setInterval("redirect()", 1000);
+
+                function redirect() {
+                    if (sec > 0) document.getElementById('tt').textContent = --sec;
+                    if (sec <= 0) location.href = 'index.php';
+                }
+            </script>
+	
+</body></html>
